@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的烘焙灵感书册</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <h1 class="site-title">我的烘焙灵感书册</h1>
+        <p class="site-tagline">家的味道 · 手作温度</p>
+      </div>
+    </header>
+
+    <main class="main">
+      <nav
+        id="filter-bar"
+        class="filter-bar"
+        aria-label="按类别筛选"
+        hidden
+      >
+        <div class="filter-bar-inner">
+          <span class="filter-bar-label">类别</span>
+          <div id="filter-chips" class="filter-chips" role="tablist"></div>
+        </div>
+      </nav>
+      <p id="status" class="status" aria-live="polite"></p>
+      <ul id="gallery" class="gallery" hidden></ul>
+    </main>
+
+    <footer class="site-footer">
+      <small>用心烘焙，与你分享</small>
+    </footer>
+
+    <script src="./catalog.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
